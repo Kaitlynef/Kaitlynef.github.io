@@ -1,136 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Superheroes</title>
-        <link rel="stylesheet" href="css/main.css">
-
-        <style>
-            body
-            {
-                background-color: rgb(255, 255, 177);
-            }
-            h1, h2, h3
-            {
-                color: red;
-            }
-            #superman
-            {
-                color: red;
-            }
-            .colhead
-            {
-                color:purple
-            }
-            h2
-            {
-                color: purple;
-            }
-            img
-            {
-                height: 100px;
-            }
-            td, th
-            {
-                border: 2px solid black;
-                padding: 15px;
-                background-color: lightsalmon;
-                
-            }
-            table
-            {
-                border-collapse: collapse;
-            }
-            th
-            {
-                background-color: gray;
-                font-size: 18px;
-            }
-            li:nth-child(1)
-            {
-                color: darkgreen;
-            }
-            table ul
-            {
-                color: aqua;
-            }
-        </style>
-
-    </head>
-    <body>
-        <h1>My Superheroes</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th class="colhead">Name</th>
-                    <th class="colhead">Alias</th>
-                    <th class="colhead">Image</th>
-                    <th class="colhead">Superpowers</th>
-                    <th class="colhead">Weaknesses</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Catwoman</th>
-                    <td>Selina&nbsp;Kyle</td>
-                       <img src="images/Catwoman.png" alt="Catwoman">
-                    <td>N/A</td>
-                    <td>
-                        <ul>
-                            <li>Laser Pointers</li>
-                            <li>Boxes</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <th id="Elektra">Elektra</th>
-                    <td>Elektra&nbsp;Natchios</td>
-                       <img src="images/Elektra.png" alt="Elektra">
-                    <td>
-                        <ul>
-                            <li>Superhuman Strength</li>
-                            <li>Telekinesis</li>
-                            <li>Telopathic Communication</li>
-                        </ul>
-                    </td>
-                    <td>
-                        Characters with opposing powers
-                    </td>
-                </tr>
-               <tr>
-                    <th id="Wonder Woman">Wonder Woman</th>
-                    <td>Diana&nbsp;Prince</td>
-                       <img src="images/wonderwoman.png" alt="Wonder Woman">
-                    <td>
-                        <ul>
-                            <li>Superhuman Strength/durability</li>
-                            <li>Flight</li>
-                            <li>Fighting Ability</li>
-                        </ul>
-                    </td>
-                    <td>
-                        Poison
-                    </td>
-                </tr>
-               <tr>
-                    <th id="Wolverine">Wolverine</th>
-                    <td>James&nbsp;Howlett</td>
-                       <img src="images/wolverine.png" alt="Wolverine">
-                    <td>
-                        <ul>
-                            <li>Healing Abilities</li>
-                            <li>Retracatable Claws</li>
-                        </ul>
-                    </td>
-                    <td>
-                        Muramasa Blade
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-            
-        </p>
-        
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Superheroes</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <h1>My Superheroes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th class="colhead">Name</th>
+                <th class="colhead">Alias</th>
+                <th class="colhead">Image</th>
+                <th class="colhead">Superpowers</th>
+                <th class="colhead">Weaknesses</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Catwoman</td>
+                <td>Selina&nbsp;Kyle</td>
+                <td><a href="images/Catwoman.png"><img src="images/Catwoman.png" alt="Catwoman"></a></td>
+                <td>N/A</td>
+                <td>
+                    <ul>
+                        <li>Laser Pointers</li>
+                        <li>Boxes</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td id="Elektra">Elektra</td>
+                <td>Elektra&nbsp;Natchios</td>
+                <td><a href="images/Elektra.png"><img src="images/Elektra.png" alt="Elektra"></a></td>
+                <td>
+                    <ul>
+                        <li>Superhuman Strength</li>
+                        <li>Telekinesis</li>
+                        <li>Telepathic Communication</li>
+                    </ul>
+                </td>
+                <td>Characters with opposing powers</td>
+            </tr>
+            <tr>
+                <td id="Wonder Woman">Wonder Woman</td>
+                <td>Diana&nbsp;Prince</td>
+                <td><a href="images/wonderwoman.png"><img src="images/wonderwoman.png" alt="Wonder Woman"></a></td>
+                <td>
+                    <ul>
+                        <li>Superhuman Strength/durability</li>
+                        <li>Flight</li>
+                        <li>Fighting Ability</li>
+                    </ul>
+                </td>
+                <td>Poison</td>
+            </tr>
+            <tr>
+                <td id="Wolverine">Wolverine</td>
+                <td>James&nbsp;Howlett</td>
+                <td><a href="images/wolverine.png"><img src="images/wolverine.png" alt="Wolverine"></a></td>
+                <td>
+                    <ul>
+                        <li>Healing Abilities</li>
+                        <li>Retractable Claws</li>
+                    </ul>
+                </td>
+                <td>Muramasa Blade</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
 </html>
