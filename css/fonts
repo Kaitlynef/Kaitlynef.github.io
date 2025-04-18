@@ -1,0 +1,27 @@
+/* css/fonts/fonts.css */
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../../fonts/RobotoSlab-Regular.woff2') format('woff2'),
+         url('../../fonts/RobotoSlab-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../fonts/OpenSans-Regular.woff2') format('woff2'),
+         url('../../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Luckiest Guy';
+    src: url('../../fonts/LuckiestGuy-Regular.woff2') format('woff2'),
+         url('../../fonts/LuckiestGuy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Add any other @font-face rules here */
