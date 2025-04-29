@@ -1,38 +1,74 @@
-/* Reset the margin and padding on body */
+/* Apply background color to all pages */
 body {
-  margin: 0;
-  padding: 0;
-  display: flex;             /* Apply Flexbox to the body */
-  justify-content: center;  /* Horizontally center content */
-  align-items: center;      /* Vertically center content */
-  min-height: 100vh;        /* Ensure the body takes up at least the full height of the viewport */
-  background-color: #f0f8ff; /* Light blue background */
-  font-family: Arial, sans-serif;
-  margin-left: 50px;         /* Larger left margin */
+    background-color: #e0f7fa; /* Light cyan background color */
+    font-family: Arial, sans-serif; /* Set a default font for the page */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
-/* Create a container for the main content */
-.container {
-  text-align: center;        /* Center all text within the container */
-  padding: 20px;             /* Add padding for spacing */
-  max-width: 800px;          /* Limit the width of content */
-  width: 100%;               /* Ensure it takes up full width of available space */
+/* Header styling for h1 elements */
+header h1 {
+    color: #009688; /* Custom color: Teal */
+    font-size: 3rem; /* Large font size */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: underline; /* Underline the heading */
+    margin-top: 20px; /* Add space from the top */
 }
 
-/* Apply spacing and center alignment for page content */
-h1, h2, p, a {
-  margin: 15px 0;            /* Add space between elements */
+/* Section styling for h2 elements */
+section h2 {
+    color: #00796b; /* Custom color: Darker teal */
+    font-size: 2rem; /* Set a medium font size for section titles */
+    margin-bottom: 10px; /* Add space below the title */
 }
 
-/* Style the home button image */
+/* Style for paragraphs inside sections */
+section p {
+    font-size: 1rem; /* Set font size */
+    line-height: 1.5; /* Increase line spacing for better readability */
+    color: #004d40; /* Dark green text color */
+    margin: 10px 0; /* Add space between paragraphs */
+}
+
+/* Link styling */
+a {
+    color: #009688; /* Teal color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make the link text bold */
+}
+
+/* Apply hover effect to links */
+a:hover {
+    color: #004d40; /* Darker green on hover */
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Image styling */
+img {
+    width: 100px; /* Set a width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow to the image */
+    margin-top: 20px; /* Add space above the image */
+}
+
+/* Style for home button image (hover effect) */
 a img {
-  display: block;            /* Makes the image a block element (for centering) */
-  margin: 20px auto;         /* Center the image horizontally */
-  height: 50px;              /* Set the height of the home button */
-  transition: transform 0.3s ease; /* Smooth hover effect */
+    transition: transform 0.3s ease; /* Smooth transformation */
 }
 
-/* Hover effect for the home button */
 a img:hover {
-  transform: scale(1.1);     /* Slightly enlarge the image when hovered */
+    transform: scale(1.1); /* Slightly enlarge the image when hovered */
+}
+
+/* Add space between sections */
+section {
+    margin: 20px 0; /* Add space between each section */
+    text-align: center; /* Center-align the content inside sections */
+    max-width: 800px; /* Limit section width */
+    width: 100%;
 }
