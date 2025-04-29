@@ -1,31 +1,37 @@
-/* Set up the body to use Flexbox */
+/* Reset the margin and padding on body */
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  /* Vertically center the content */
-  align-items: center;      /* Horizontally center the content */
-  min-height: 100vh;        /* Ensure it takes up at least full viewport height */
-  background-color: #f0f8ff; /* Background color (light blue) */
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;          /* Apply Flexbox to the body */
+  justify-content: center; /* Horizontally center content */
+  align-items: center;    /* Vertically center content */
+  min-height: 100vh;      /* Ensure the body takes up at least the full height of the viewport */
+  background-color: #f0f8ff; /* Light blue background */
+  font-family: Arial, sans-serif;
 }
 
-/* Apply spacing and center alignment for the page content */
+/* Create a container for the main content */
+.container {
+  text-align: center;   /* Center all text within the container */
+  padding: 20px;        /* Add padding for spacing */
+  max-width: 800px;     /* Limit the width of content */
+  width: 100%;          /* Ensure it takes up full width of available space */
+}
+
+/* Apply spacing and center alignment for page content */
 h1, h2, p, a {
-  text-align: center;   /* Center-align text */
-  margin: 15px 0;       /* Add some space between elements */
+  margin: 15px 0;   /* Add space between elements */
 }
 
 /* Style the home button image */
 a img {
-  display: block; /* Makes the image a block element */
-  margin: 20px auto; /* Center it horizontally with some margin */
-  height: 50px; /* Adjust the size of the home button */
+  display: block;      /* Makes the image a block element (for centering) */
+  margin: 20px auto;   /* Center the image horizontally */
+  height: 50px;        /* Set the height of the home button */
   transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
 /* Hover effect for the home button */
 a img:hover {
-  transform: scale(1.1); /* Slightly enlarge the image on hover */
+  transform: scale(1.1); /* Slightly enlarge the image when hovered */
 }
