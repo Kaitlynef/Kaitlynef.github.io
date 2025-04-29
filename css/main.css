@@ -47,10 +47,10 @@ a:hover {
     text-decoration: underline; /* Underline links on hover */
 }
 
-/* Image styling */
+/* Image styling (larger images) */
 img {
-    width: 100px; /* Set a width for the image */
-    height: auto; /* Maintain aspect ratio */
+    width: 200px; /* Set the width of the image to 200px */
+    height: auto; /* Maintain the aspect ratio */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow to the image */
     margin-top: 20px; /* Add space above the image */
