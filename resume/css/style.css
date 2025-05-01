@@ -7,11 +7,14 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  text-align: center; /* Center text globally */
+  font-size: 18px; /* Increased base font size */
 }
 
 h1, h2 {
   color: #2b3d4f;
   text-align: center;
+  font-size: 32px; /* Bigger headings */
 }
 
 nav ul {
@@ -34,6 +37,9 @@ nav ul li a {
 
 section {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 img {
@@ -47,6 +53,6 @@ img {
 p, li {
   font-family: monospace;
   font-variant: small-caps;
-  text-align: left;
+  text-align: center; /* Center bullet points and paragraphs */
+  font-size: 18px;
 }
-
