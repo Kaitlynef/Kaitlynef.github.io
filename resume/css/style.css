@@ -1,1 +1,52 @@
+/* Custom fun font */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+  font-family: 'Patrick Hand', cursive;
+  background-color: #fffbe6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #2b3d4f;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: #7755cc;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-variant: small-caps;
+}
+
+section {
+  padding: 20px;
+}
+
+img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 50%;
+  width: 200px;
+}
+
+/* Required styles */
+p, li {
+  font-family: monospace;
+  font-variant: small-caps;
+  text-align: left;
+}
 
