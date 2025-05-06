@@ -7,12 +7,13 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  font-size: 1.2em; /* Increased the base font size */
 }
 
 h1 {
   color: #2b3d4f;
   text-align: center;
-  font-size: 60px; /* Made really big */
+  font-size: 60px; /* Already quite big */
   margin-top: 20px;
 }
 
@@ -55,4 +56,5 @@ p, li {
   font-family: monospace;
   font-variant: small-caps;
   text-align: left;
+  font-size: 1.1em; /* Slightly increased the size of paragraphs and list items */
 }
