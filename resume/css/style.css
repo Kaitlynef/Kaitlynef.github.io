@@ -7,54 +7,64 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  font-size: 1.2em; /* Increased the base font size */
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  min-height: 100vh;
+  text-align: center;
+  font-size: 2em; /* Significantly larger base font size */
 }
 
 h1 {
   color: #2b3d4f;
-  text-align: center;
-  font-size: 60px; /* Already quite big */
-  margin-top: 20px;
+  font-size: 4em;
+  margin-top: 0;
 }
 
 h2 {
   color: #2b3d4f;
-  text-align: center;
+  font-size: 2.5em;
 }
 
 nav ul {
   list-style-type: none;
   background-color: #7755cc;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px; /* Add some space below the navigation */
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 30px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
   font-variant: small-caps;
+  font-size: 1.5em;
 }
 
 section {
-  padding: 20px;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 30px; /* Add some space below sections */
 }
 
 img {
   display: block;
-  margin: 10px auto;
+  margin: 20px auto;
   border-radius: 50%;
-  width: 200px;
+  width: 300px;
 }
 
 /* Required styles */
 p, li {
   font-family: monospace;
   font-variant: small-caps;
-  text-align: left;
-  font-size: 1.1em; /* Slightly increased the size of paragraphs and list items */
+  text-align: center;
+  font-size: 1.6em;
+  line-height: 1.5; /* Improve readability with larger text */
 }
