@@ -7,24 +7,16 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column; /* Arrange items vertically */
-  justify-content: flex-start; /* Align items at the top initially */
-  align-items: center; /* Center horizontally */
-  min-height: 100vh;
+}
+
+h1, h2 {
+  color: #2b3d4f;
   text-align: center;
-  font-size: 1.2em; /* A more reasonable base font size */
 }
 
-h1 {
-  color: #2b3d4f;
-  font-size: 2.5em;
-  margin-top: 20px;
-}
-
-h2 {
-  color: #2b3d4f;
-  font-size: 1.8em;
+nav {
+  width: 100%;
+  margin: 0;
 }
 
 nav ul {
@@ -33,7 +25,6 @@ nav ul {
   padding: 10px;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px; /* Add some space below the navigation */
 }
 
 nav ul li {
@@ -44,15 +35,10 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-variant: small-caps;
-  font-size: 1em;
 }
 
 section {
   padding: 20px;
-  text-align: left; /* Adjust text alignment within sections */
-  margin-bottom: 20px; /* Add some space below sections */
-  width: 80%; /* Limit section width for better readability */
-  max-width: 600px; /* Set a maximum width */
 }
 
 img {
@@ -67,6 +53,4 @@ p, li {
   font-family: monospace;
   font-variant: small-caps;
   text-align: left;
-  font-size: 1em;
-  line-height: 1.4;
 }
