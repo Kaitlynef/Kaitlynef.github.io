@@ -8,6 +8,8 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    font-size: 16px; /* Default font size for base scaling */
+    line-height: 1.5; /* Line height for better readability */
 }
 
 /* Header styling for h1 elements */
@@ -17,6 +19,7 @@ header h1 {
     font-weight: bold; /* Make the text bold */
     text-decoration: underline; /* Underline the heading */
     margin-top: 20px; /* Add space from the top */
+    text-align: center;
 }
 
 /* Section styling for h2 elements */
@@ -24,6 +27,7 @@ section h2 {
     color: #00796b; /* Custom color: Darker teal */
     font-size: 2rem; /* Set a medium font size for section titles */
     margin-bottom: 10px; /* Add space below the title */
+    text-align: center;
 }
 
 /* Style for paragraphs inside sections */
@@ -32,6 +36,7 @@ section p {
     line-height: 1.5; /* Increase line spacing for better readability */
     color: #004d40; /* Dark green text color */
     margin: 10px 0; /* Add space between paragraphs */
+    text-align: left; /* Align text left for better readability */
 }
 
 /* Link styling */
@@ -49,11 +54,15 @@ a:hover {
 
 /* Image styling (larger images) */
 img {
-    width: 200px; /* Set the width of the image to 200px */
+    width: 100%; /* Make the image responsive */
+    max-width: 200px; /* Limit max width */
     height: auto; /* Maintain the aspect ratio */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow to the image */
     margin-top: 20px; /* Add space above the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Style for home button image (hover effect) */
@@ -71,4 +80,56 @@ section {
     text-align: center; /* Center-align the content inside sections */
     max-width: 800px; /* Limit section width */
     width: 100%;
+}
+
+/* Make everything responsive */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+    
+    header h1 {
+        font-size: 2.5rem; /* Reduce header size on small screens */
+    }
+    
+    section h2 {
+        font-size: 1.8rem; /* Reduce section title size */
+    }
+    
+    section p {
+        font-size: 0.9rem; /* Slightly smaller text on mobile */
+    }
+
+    img {
+        max-width: 150px; /* Limit image width for smaller screens */
+    }
+
+    /* Adjust the sections layout for mobile */
+    section {
+        padding: 15px;
+        margin: 15px 10px; /* Reduce section margins on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem; /* Further reduce header size */
+    }
+    
+    section h2 {
+        font-size: 1.5rem; /* Further reduce section title size */
+    }
+    
+    section p {
+        font-size: 0.8rem; /* Reduce text size for smaller screens */
+    }
+
+    img {
+        max-width: 120px; /* Further limit image width */
+    }
+
+    /* Adjust the sections layout for very small screens */
+    section {
+        margin: 10px 5px;
+    }
 }
