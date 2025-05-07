@@ -7,20 +7,26 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  font-size: 16px; /* Base font size */
+  line-height: 1.5; /* Improved readability */
 }
 
+/* Heading styling */
 h1 {
   color: #2b3d4f;
   text-align: center;
   font-size: 3rem;
+  margin-top: 20px; /* Added space from the top */
 }
 
 h2 {
   color: #2b3d4f;
   text-align: center;
   font-size: 2rem;
+  margin-top: 20px;
 }
 
+/* Navigation styling */
 nav {
   width: 100%;
   margin: 0;
@@ -32,6 +38,7 @@ nav ul {
   padding: 10px;
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
 nav ul li {
@@ -42,22 +49,93 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-variant: small-caps;
+  font-size: 1rem;
 }
 
+/* Section styling */
 section {
   padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
 }
 
+/* Image styling */
 img {
   display: block;
   margin: 10px auto;
   border-radius: 50%;
-  width: 200px;
+  width: 200px; /* Base size */
+  height: auto;
 }
 
-/* Required styles */
+/* Paragraph and list styling */
 p, li {
   font-family: monospace;
   font-variant: small-caps;
   text-align: left;
+  font-size: 1rem; /* Default text size */
+}
+
+/* Responsive Design: For devices with max-width of 768px */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Smaller font size for tablets */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Adjust header size */
+  }
+
+  h2 {
+    font-size: 1.8rem; /* Adjust section title size */
+  }
+
+  nav ul {
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin: 0 10px; /* Reduce space between menu items */
+  }
+
+  img {
+    width: 150px; /* Scale image down */
+  }
+
+  section {
+    padding: 15px; /* Adjust section padding */
+  }
+}
+
+/* Responsive Design: For devices with max-width of 480px */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px; /* Smaller font size for small screens */
+  }
+
+  h1 {
+    font-size: 2rem; /* Further reduce header size */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Further reduce section title size */
+  }
+
+  nav ul {
+    padding: 8px;
+  }
+
+  nav ul li {
+    margin: 0 5px; /* Tighter space between menu items */
+  }
+
+  img {
+    width: 120px; /* Further scale down the image */
+  }
+
+  section {
+    margin: 15px 5px; /* Reduce margins for smaller screens */
+  }
 }
