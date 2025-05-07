@@ -1,27 +1,27 @@
 /* css/fonts/fonts.css */
 
+/* Roboto Slab font - Modern browsers load .woff2 first */
 @font-face {
     font-family: 'Roboto Slab';
-    src: url('../../fonts/RobotoSlab-Regular.woff2') format('woff2'),
-         url('../../fonts/RobotoSlab-Regular.woff') format('woff');
+    src: url('../../fonts/RobotoSlab-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
+/* Open Sans font - Modern browsers load .woff2 first */
 @font-face {
     font-family: 'Open Sans';
-    src: url('../../fonts/OpenSans-Regular.woff2') format('woff2'),
-         url('../../fonts/OpenSans-Regular.woff') format('woff');
+    src: url('../../fonts/OpenSans-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
+/* Luckiest Guy font - Modern browsers load .woff2 first */
 @font-face {
     font-family: 'Luckiest Guy';
-    src: url('../../fonts/LuckiestGuy-Regular.woff2') format('woff2'),
-         url('../../fonts/LuckiestGuy-Regular.woff') format('woff');
+    src: url('../../fonts/LuckiestGuy-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
-/* Add any other @font-face rules here */
+/* Optionally, add additional font-face rules for other weights/styles here */
