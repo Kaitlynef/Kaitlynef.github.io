@@ -9,9 +9,16 @@ body {
   padding: 0;
 }
 
-h1, h2 {
+h1 {
   color: #2b3d4f;
   text-align: center;
+  font-size: 3rem;
+}
+
+h2 {
+  color: #2b3d4f;
+  text-align: center;
+  font-size: 2rem;
 }
 
 nav {
