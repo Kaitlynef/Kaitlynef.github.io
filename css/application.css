@@ -2,33 +2,33 @@
 
 /* Base styles - Bright and Energetic! */
 body {
-    font-family: 'Luckiest Guy', cursive; /* A fun, bold font - you'll need to include this */
-    background-color: #ffea79; /* Bright yellow background like a diner */
-    color: #333; /* Dark text for contrast */
+    font-family: 'Luckiest Guy', cursive;
+    background-color: #ffea79;
+    color: #333;
     margin: 0;
-    padding: 20px;
+    padding: 5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; /* Center align text for a more direct feel */
+    text-align: center;
 }
 
 header {
-    padding: 30px 0;
-    margin-bottom: 30px;
-    border-bottom: 4px dashed #f44336; /* Energetic red dashed line */
+    padding: 5vh 0;
+    margin-bottom: 5vh;
+    border-bottom: 4px dashed #f44336;
 }
 
 header h1 {
-    font-size: 3.5em;
-    color: #f44336; /* Bright red title */
-    margin-bottom: 10px;
-    text-shadow: 2px 2px #ffc107; /* Yellow shadow for pop */
+    font-size: 4vw;
+    color: #f44336;
+    margin-bottom: 1vh;
+    text-shadow: 1px 1px #ffc107;
 }
 
 header h2#credit {
-    font-size: 1.2em;
-    color: #2196f3; /* Cheerful blue */
+    font-size: 2.5vw;
+    color: #2196f3;
     margin-top: 0;
     font-style: italic;
 }
@@ -36,89 +36,88 @@ header h2#credit {
 nav ul {
     list-style: none;
     padding: 0;
-    margin-bottom: 25px;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 20px;
+    display: inline-block;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 12px 20px;
-    background-color: #4caf50; /* Lively green for buttons */
+    padding: 1em 1.5em;
+    background-color: #4caf50;
     border-radius: 8px;
     font-weight: bold;
-    text-transform: uppercase; /* More energetic text */
-    box-shadow: 2px 2px #8bc34a; /* Light green shadow */
+    text-transform: uppercase;
+    box-shadow: 2px 2px #8bc34a;
     transition: background-color 0.3s ease;
+    font-size: 0.9rem;
 }
 
 nav ul li a:hover {
-    background-color: #66bb6a; /* Slightly lighter green on hover */
+    background-color: #66bb6a;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
 }
 
 #game-embed {
-    margin-bottom: 30px;
+    margin-bottom: 5vh;
     border-radius: 10px;
-    overflow: hidden; /* Clip any content outside the border */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
 }
 
 #game-embed iframe {
-    width: 92vh;
-    height: 80vh;
-    border: 5px solid #fdd835; /* Bright yellow border for the game frame */
-    background-color: #fff; /* Ensure iframe background is white if the game has transparency */
+    width: 100%;
+    height: 60vh;
+    border: 5px solid #fdd835;
+    background-color: #fff;
     display: block;
 }
 
 section {
     background-color: #fff;
     color: #333;
-    padding: 30px;
-    margin-bottom: 30px;
+    padding: 5vw;
+    margin-bottom: 5vh;
     border-radius: 12px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-    width: 85%;
+    width: 100%;
     max-width: 1000px;
-    text-align: left; /* Align text within sections to the left for readability */
+    text-align: left;
 }
 
 h2 {
-    font-size: 2.2em;
-    color: #ff9800; /* Orange headings */
-    border-bottom: 3px solid #ffc107; /* Yellow underline */
+    font-size: 2rem;
+    color: #ff9800;
+    border-bottom: 3px solid #ffc107;
     padding-bottom: 10px;
     margin-top: 0;
     margin-bottom: 20px;
-    text-align: center; /* Center the section titles */
+    text-align: center;
 }
 
-ol {
-    padding-left: 30px;
+ol, ul {
+    padding-left: 2rem;
     line-height: 1.8;
 }
 
 li {
     margin-bottom: 12px;
-    font-weight: bold; /* Emphasize the steps */
-}
-
-ul {
-    padding-left: 30px;
-    list-style-type: disc;
-    line-height: 1.8;
+    font-weight: bold;
 }
 
 p {
@@ -127,7 +126,7 @@ p {
 }
 
 strong {
-    color: #f44336; /* Highlight important words in red */
+    color: #f44336;
 }
 
 .linkreturn {
@@ -154,4 +153,30 @@ footer {
     color: #777;
     font-size: 1em;
     text-align: center;
+}
+
+/* Responsive tweaks for small screens */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2#credit {
+        font-size: 1rem;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+        padding: 0.75em 1em;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    #game-embed iframe {
+        height: 50vh;
+    }
+}
+
 }
