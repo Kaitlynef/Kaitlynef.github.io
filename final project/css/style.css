@@ -1,116 +1,179 @@
-
 body {
-    font-family: 'Roboto', sans-serif; /* Using a clean, widely available font */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8; /* A very light grey background */
-    color: #333;
+    background-color: #f5f0e1;
+    color: #3d352f;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure footer stays at the bottom */
 }
 
 header {
-    background-color: #fff; /* White header, similar to theirs */
-    color: #333;
-    padding: 20px;
+    background-color: #f5f0e1;
+    padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #eee; /* Subtle border */
 }
 
-.logo {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #55350b; /* A rich brown for the logo */
-}
-
-nav ul {
+.header-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
 
-nav li {
-    margin-left: 20px;
+.header-nav li {
+    margin-right: 20px;
 }
 
-nav a {
-    color: #333;
+.header-nav a {
+    color: #3d352f;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: #a0855b; /* A lighter brown for hover effect */
+.header-nav a:hover {
+    color: #776e65;
 }
 
-main {
-    padding: 20px;
+.logo-container {
+    text-align: center;
 }
 
-section {
-    background-color: #fff;
-    padding: 40px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Softer shadow */
+.logo-main {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.logo-sub {
+    font-size: 0.8em;
+    color: #776e65;
+    display: block;
+}
+
+.order-button a {
+    display: inline-block;
+    background-color: white;
+    color: #3d352f;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 1px solid #3d352f;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.order-button a:hover {
+    background-color: #3d352f;
+    color: white;
+}
+
+main.promotion-main {
+    flex-grow: 1; /* Allow main to take up remaining vertical space */
+    padding: 0;
 }
 
 .hero {
+    position: relative;
     text-align: center;
-    padding: 100px 20px;
-    color: #fff;
-    border-radius: 8px;
-    margin-bottom: 30px;
-    /* You'll set the background image here */
-    background-image: url('your-waffle-whiskey-image.jpg'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
+    color: white;
 }
 
-.hero-content {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text readability */
-    padding: 40px;
-    border-radius: 8px;
+.hero-image {
+    width: 100%;
+    display: block;
+    max-height: 600px; /* Adjust as needed */
+    object-fit: cover; /* Prevent distortion */
 }
 
-.hero h1 {
+.hero-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text-overlay h2 {
     font-size: 3em;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    color: white;
+    border-bottom: none;
 }
 
-.hero p {
-    font-size: 1.2em;
+.bottom-actions {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f5f0e1;
+}
+
+.bottom-button {
+    background-color: white;
+    color: #3d352f;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 0 10px;
+    border: 1px solid #3d352f;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bottom-button:hover {
+    background-color: #3d352f;
+    color: white;
+}
+
+.features, .technologies {
+    background-color: white;
+    padding: 40px;
     margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.features h2, .technologies h2 {
+    color: #3d352f;
+    border-bottom: 2px solid #e0cba8;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.features ul, .technologies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li, .technologies li {
+    margin-bottom: 10px;
 }
 
 .button {
     display: inline-block;
-    background-color: #a0855b;
-    color: #fff;
-    padding: 12px 30px;
+    background-color: white;
+    color: #3d352f;
+    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    border: 1px solid #3d352f;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .button:hover {
-    background-color: #55350b;
-}
-
-h2 {
-    color: #55350b;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #e0cba8; /* Light brown underline */
-    padding-bottom: 10px;
+    background-color: #3d352f;
+    color: white;
 }
 
 footer {
     text-align: center;
     padding: 30px;
-    background-color: #f8f8f8;
-    color: #777;
-    border-top: 1px solid #eee;
+    background-color: #f5f0e1;
+    color: #776e65;
+    border-top: 1px solid #e0cba8;
 }
