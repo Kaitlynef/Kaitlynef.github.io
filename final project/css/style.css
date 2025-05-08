@@ -2,48 +2,34 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f0e1;
-    color: #3d352f;
+    background-color: #f2efe6; /* Light tan background - adjusted */
+    color: #4A443F; /* Medium brown text - adjusted */
     line-height: 1.6;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure footer stays at the bottom */
+    min-height: 100vh;
 }
 
 header {
-    background-color: #f5f0e1;
+    background-color: #f2efe6; /* Match body background */
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.header-nav li {
-    margin-right: 20px;
-}
-
 .header-nav a {
-    color: #3d352f;
+    color: #4A443F;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .header-nav a:hover {
-    color: #776e65;
-}
-
-.logo-container {
-    text-align: center;
+    color: #756E68; /* Slightly lighter brown */
 }
 
 .logo-main {
+    color: #4A443F;
     font-size: 2em;
     font-weight: bold;
     letter-spacing: 0.1em;
@@ -51,28 +37,28 @@ header {
 
 .logo-sub {
     font-size: 0.8em;
-    color: #776e65;
+    color: #756E68;
     display: block;
 }
 
 .order-button a {
     display: inline-block;
     background-color: white;
-    color: #3d352f;
+    color: #4A443F;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 25px;
-    border: 1px solid #3d352f;
+    border: 1px solid #4A443F;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .order-button a:hover {
-    background-color: #3d352f;
+    background-color: #4A443F;
     color: white;
 }
 
 main.promotion-main {
-    flex-grow: 1; /* Allow main to take up remaining vertical space */
+    flex-grow: 1;
     padding: 0;
 }
 
@@ -82,50 +68,35 @@ main.promotion-main {
     color: white;
 }
 
-.hero-image {
-    width: 100%;
-    display: block;
-    max-height: 600px; /* Adjust as needed */
-    object-fit: cover; /* Prevent distortion */
-}
-
 .hero-text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
 }
 
 .hero-text-overlay h2 {
-    font-size: 3em;
-    margin-bottom: 10px;
     color: white;
     border-bottom: none;
 }
 
 .bottom-actions {
+    background-color: #f2efe6;
     display: flex;
     justify-content: center;
     padding: 20px;
-    background-color: #f5f0e1;
 }
 
 .bottom-button {
     background-color: white;
-    color: #3d352f;
+    color: #4A443F;
     padding: 15px 30px;
     border-radius: 30px;
     text-decoration: none;
     margin: 0 10px;
-    border: 1px solid #3d352f;
+    border: 1px solid #4A443F;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .bottom-button:hover {
-    background-color: #3d352f;
+    background-color: #4A443F;
     color: white;
 }
 
@@ -139,41 +110,16 @@ main.promotion-main {
 }
 
 .features h2, .technologies h2 {
-    color: #3d352f;
-    border-bottom: 2px solid #e0cba8;
+    color: #4A443F;
+    border-bottom: 2px solid #d8d0c2; /* Lighter tan underline */
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
-.features ul, .technologies ul {
-    list-style: none;
-    padding: 0;
-}
-
-.features li, .technologies li {
-    margin-bottom: 10px;
-}
-
-.button {
-    display: inline-block;
-    background-color: white;
-    color: #3d352f;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 25px;
-    border: 1px solid #3d352f;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #3d352f;
-    color: white;
-}
-
 footer {
+    background-color: #f2efe6;
+    color: #756E68;
+    border-top: 1px solid #d8d0c2;
     text-align: center;
     padding: 30px;
-    background-color: #f5f0e1;
-    color: #776e65;
-    border-top: 1px solid #e0cba8;
 }
