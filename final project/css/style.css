@@ -1,1 +1,116 @@
 
+body {
+    font-family: 'Roboto', sans-serif; /* Using a clean, widely available font */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* A very light grey background */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff; /* White header, similar to theirs */
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee; /* Subtle border */
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #55350b; /* A rich brown for the logo */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #a0855b; /* A lighter brown for hover effect */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Softer shadow */
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    /* You'll set the background image here */
+    background-image: url('your-waffle-whiskey-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text readability */
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #a0855b;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #55350b;
+}
+
+h2 {
+    color: #55350b;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0cba8; /* Light brown underline */
+    padding-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #f8f8f8;
+    color: #777;
+    border-top: 1px solid #eee;
+}
